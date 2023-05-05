@@ -6,18 +6,18 @@ class Person
   public $name;
   public $age;
 
-  public function personName()
+  function __construct($name, $age)
   {
-    echo "Person Name Is : " . $this->name . "</br>";
+    $this->name = $name;
+    $this->age = $age;
   }
 
-  public function personAge($value)
+  public function personDetails()
   {
-    echo "Person Age Is : " . $this->age = $value;
+    echo "Person Name Is {$this->name} & Person Age Is {$this->age}" . "</br>";
   }
 }
 
-$personOne = new Person;
-$personOne->personName();
+$personOne = new Person("Azajul", "23");
 
-$personOne->personAge(23);
+$personOne->personDetails();

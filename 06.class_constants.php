@@ -28,6 +28,7 @@
 
 
 //Static Properties And Method
+
 // class UserData
 // {
 //   public $user;
@@ -92,35 +93,113 @@
 
 //Final Keyword
 
-final class UserData
-{
-  public $user;
-  public $userId;
+// final class UserData
+// {
+//   public $user;
+//   public $userId;
 
-  public function __construct($userName, $userId)
-  {
-    $this->user = $userName;
-    $this->userId = $userId;
-  }
+//   public function __construct($userName, $userId)
+//   {
+//     $this->user = $userName;
+//     $this->userId = $userId;
+//   }
 
-  public  function display()
-  {
-    echo "User Name Is {$this->user} And User Id Is {$this->userId}";
-  }
-}
+//   public  function display()
+//   {
+//     echo "User Name Is {$this->user} And User Id Is {$this->userId}";
+//   }
+// }
 
-class Admid extends UserData
-{
-  public $level;
-  public function display()
-  {
-    echo "User Name Is {$this->user} And User Id Is {$this->userId} And User Level Is {$this->level}";
-  }
-}
+// class Admid extends UserData
+// {
+//   public $level;
+//   public function display()
+//   {
+//     echo "User Name Is {$this->user} And User Id Is {$this->userId} And User Level Is {$this->level}";
+//   }
+// }
 
-$ur = new UserData("Mamun", 23);
-$ur->display();
-echo "<br>";
-$ad = new Admid("Nazim", 22);
-$ad->level = "Manager";
-$ad->display();
+// $ur = new UserData("Mamun", 23);
+// $ur->display();
+// echo "<br>";
+// $ad = new Admid("Nazim", 22);
+// $ad->level = "Manager";
+// $ad->display();
+
+
+//Access Modifiers
+
+// class UserData
+// {
+//   public $user;
+//   public $userId;
+//   private $age = 25;
+
+
+//   public function __construct($userName, $userId)
+//   {
+//     $this->user = $userName;
+//     $this->userId = $userId;
+//   }
+
+//   public  function display()
+//   {
+//     echo "User Name Is {$this->user} And User Id Is {$this->userId}";
+//     echo "<br>";
+//     echo $this->age . " Inside Class";
+//   }
+// }
+
+// class Admid extends UserData
+// {
+//   public $level;
+//   public function display()
+//   {
+//     echo "User Name Is {$this->user} And User Id Is {$this->userId} And User Level Is {$this->level}";
+//     echo "<br>";
+//     echo $this->age . " Inside Sub Class";
+//   }
+// }
+
+// $ur = new UserData("Mamun", 23);
+// $ur->display();
+// echo "<br>";
+// $ad = new Admid("Nazim", 22);
+// $ad->level = "Manager";
+// $ad->display();
+
+
+//Polymorphism
+
+// class UserData
+// {
+//   public $user;
+//   public $userId;
+
+//   public function __construct($userName, $userId)
+//   {
+//     $this->user = $userName;
+//     $this->userId = $userId;
+//   }
+
+//   public  function display()
+//   {
+//     echo "User Name Is {$this->user} And User Id Is {$this->userId}";
+//   }
+// }
+
+// class Admid extends UserData
+// {
+//   public $level;
+//   public function display()
+//   {
+//     echo "User Name Is {$this->user} And User Id Is {$this->userId} And User Level Is {$this->level}";
+//   }
+// }
+
+// $ur = new UserData("Mamun", 23);
+// $ur->display();
+// echo "<br>";
+// $ad = new Admid("Nazim", 22);
+// $ad->level = "Manager";
+// $ad->display();

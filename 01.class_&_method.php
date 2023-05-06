@@ -26,7 +26,6 @@ class Person
   }
 }
 
-$personOne = new Person;
+$personOne = new Person("", "");
 $personOne->personName();
-
 $personOne->personAge(23);

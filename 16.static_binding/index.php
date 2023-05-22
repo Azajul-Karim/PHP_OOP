@@ -4,12 +4,14 @@ include 'php.php';
 
 class phpChild extends Php
 {
-  function cms()
+  static function getClass()
   {
+    return __CLASS__;
   }
 }
 
-$php = new phpChild;
+$php = new Php();
 $php->frameWork();
-echo "<hr>";
-$php->cms();
+
+$childPhp = new phpChild();
+$childPhp->frameWork();

@@ -1,9 +1,14 @@
 <?php
-abstract class Php
+class Php
 {
 
   static function frameWork()
   {
-    echo "CakePhp Is a Framework <br>";
+    echo static::getClass() . "<br>";
+  }
+
+  static function getClass()
+  {
+    return __CLASS__;
   }
 }
